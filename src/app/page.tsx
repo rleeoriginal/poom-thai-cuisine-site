@@ -1,9 +1,17 @@
 import Image from "next/image";
+import Navbar from "./Components/Navbar";
+import restaurantPic from '../../public/restaurant.png'
 
 export default function Home() {
   return (
     <main>
-      <div><b> Poom's website</b></div>
+      <Image
+        src={restaurantPic}
+        className="bg-img"
+        alt="Picture of the restaurant"
+      />
+      <Navbar />
+      <div><b> Body</b></div>
     </main>
   )
 }
