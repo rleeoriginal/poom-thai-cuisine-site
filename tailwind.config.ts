@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      'poom': ['Impact', 'monospace', 'Helvetica', 'sans-serif'],
+      'poom': ['monospace', 'Impact', 'Helvetica', 'sans-serif'],
     },
     extend: {
       backgroundImage: {
