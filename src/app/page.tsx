@@ -1,20 +1,25 @@
 import Image from "next/image";
 import Navbar from "./Components/Navbar";
 import restaurantPic from '../../public/restaurant.png'
+import MainBody from "./MainBody";
+
+import LowerCard from "./Components/LowerCard";
+
+
 
 export default function Home() {
   return (
-    <main>
-      <Image
-        src={restaurantPic}
-        className="bg-img"
-        alt="Picture of the restaurant"
-      />
+    <main className="bg-filler">
       <Navbar />
-      <div><b> Body</b></div>
+      <MainBody />
+      <LowerCard />
     </main>
   )
 }
+
+// white no shape same font
+
+
 /*
 export default function Home() {
   return (
