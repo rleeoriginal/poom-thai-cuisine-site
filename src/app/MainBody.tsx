@@ -6,7 +6,7 @@ import MainCard from "./Components/MainCard";
 
 export default function MainBody() {
     return <>
-        <div className="min-h-[700px] flex flex-col">
+        <div className="min-h-[700px] flex flex-col relative">
             <Image
                 src={restaurantPic}
                 className="test"

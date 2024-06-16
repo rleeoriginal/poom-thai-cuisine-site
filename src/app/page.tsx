@@ -9,7 +9,7 @@ import LowerCard from "./Components/LowerCard";
 
 export default function Home() {
   return (
-    <main className="bg-filler">
+    <main className="flex flex-col">
       <Navbar />
       <MainBody />
       <LowerCard />
