@@ -2,13 +2,20 @@ import { Fragment } from 'react'
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
+import { Pacifico } from 'next/font/google';
+
+const pacifico = Pacifico({ 
+    weight: ['400'],
+    subsets: ['latin'] 
+});
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function NavButtons() {
   return <>
-    <div className="grid grid-cols-2 flex-1 gap-2">
+    <div className={`grid grid-cols-2 flex-1 gap-2 ${pacifico.className}`}>
         <div className="flex justify-center items-center">
             <Menu as="div" className="relative inline-block text-left">
                 <div>

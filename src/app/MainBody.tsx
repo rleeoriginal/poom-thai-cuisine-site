@@ -1,4 +1,4 @@
-import LowerCard from "./Components/LowerCard";
+
 import Image from "next/image";
 import restaurantPic from '../../public/restaurant.png'
 import MainCard from "./Components/MainCard";
@@ -6,7 +6,7 @@ import MainCard from "./Components/MainCard";
 
 export default function MainBody() {
     return <>
-        <div className="min-h-[700px] flex flex-col relative">
+        <div className="min-h-[500px] flex flex-col relative p-10 ">
             <Image
                 src={restaurantPic}
                 className="test"
