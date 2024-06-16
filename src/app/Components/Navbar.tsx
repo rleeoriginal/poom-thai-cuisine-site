@@ -4,6 +4,13 @@ import Image from "next/image";
 import Dropdown from "./Dropdown";
 import NavButtons from "./NavButtons";
 
+import { Pacifico } from 'next/font/google';
+
+const pacifico = Pacifico({ 
+    weight: ['400'],
+    subsets: ['latin'] 
+});
+
 
 // original navbar color: #6B8A7A
 export default function Navbar() {
@@ -23,7 +30,7 @@ export default function Navbar() {
                     height={90}
                     alt="Logo of restaurant" 
                 />
-                <div className="text-[#FFE838] text-xl text-center">
+                <div className={`text-[#FFE838] text-xl text-center ${pacifico.className}`}>
                     <b>Poom Thai Cuisine</b>
                 </div>
             </div>

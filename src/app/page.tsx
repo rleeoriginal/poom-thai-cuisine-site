@@ -1,9 +1,7 @@
-import Image from "next/image";
 import Navbar from "./Components/Navbar";
-import restaurantPic from '../../public/restaurant.png'
 import MainBody from "./MainBody";
-
-import LowerCard from "./Components/LowerCard";
+import LowerBody from "./Components/LowerBody";
+import FooterComponent from "./Components/FooterComponent";
 
 
 
@@ -12,8 +10,9 @@ export default function Home() {
     <main className="flex flex-col">
       <Navbar />
       <MainBody />
-      <LowerCard />
-    </main>
+      <LowerBody />
+      <FooterComponent />
+    </main> 
   )
 }
 
