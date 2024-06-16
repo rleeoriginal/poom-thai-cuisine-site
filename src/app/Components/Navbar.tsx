@@ -10,7 +10,11 @@ export default function Navbar() {
 
     return (
         <div className="min-h-14 bg-[#007E3A]/90 p-3 grid grid-cols-3"> 
-            <div className="">
+            <div className="text-[#FFE838] grid grid-rows-2">
+                <div className="border-4 border-b-[#FFE838] border-t-transparent border-l-transparent border-r-transparent">
+                </div>
+                <div>
+                </div>
             </div>
             <div className="flex-col flex items-center w-[100%] ">
                 <Image
@@ -23,7 +27,7 @@ export default function Navbar() {
                     <b>Poom Thai Cuisine</b>
                 </div>
             </div>
-            <div className="grid grid-cols-2 text-[#FFE838] font-semibold">
+            <div className="text-[#FFE838] font-semibold flex">
                 <NavButtons />
             </div>
         </div>
