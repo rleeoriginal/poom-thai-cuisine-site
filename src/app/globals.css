@@ -24,6 +24,11 @@
 
 }
 
+.test {
+  object-fit: cover;
+  z-index: -2;
+}
+
 .text-shadow{
   text-shadow: rgba(256, 256, 256, 0.634) 2px 2px 0px;
 

@@ -9,11 +9,14 @@ export default function MainBody() {
         <div className="min-h-[700px] flex flex-col">
             <Image
                 src={restaurantPic}
-                className="img-setting"
+                className="test"
                 alt="Picture of the restaurant"
+                fill={true}
             />
             <MainCard /> 
         </div>
     </>
 
 }
+
+//className="img-setting"
