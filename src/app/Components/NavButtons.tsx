@@ -34,14 +34,14 @@ export default function NavButtons() {
             leaveFrom="transform opacity-100 scale-100"
             leaveTo="transform opacity-0 scale-95"
         >
-            <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[#6B8A7A]/70 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+            <MenuItems className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-[#007E3A]/70 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
             <div className="py-1">
                 <MenuItem>
                 {({ focus }) => (
                     <a
                     href="https://www.doordash.com/store/poom-thai-cuisine-santa-monica-78008/"
                     className={classNames(
-                        focus ? 'bg-gray-50/50 text-[#FFE838] rounded-md' : 'text-[#FFE838]',
+                        focus ? 'bg-[gray-50]/50 text-[#FFE838] rounded-md' : 'text-[#FFE838]',
                         'block px-4 py-2 text-sm'
                     )}
                     >

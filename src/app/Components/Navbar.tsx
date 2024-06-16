@@ -4,10 +4,12 @@ import Image from "next/image";
 import Dropdown from "./Dropdown";
 import NavButtons from "./NavButtons";
 
+
+// original navbar color: #6B8A7A
 export default function Navbar() {
 
     return (
-        <div className="min-h-14 bg-[#6B8A7A]/70 p-3 grid grid-cols-3"> 
+        <div className="min-h-14 bg-[#007E3A]/90 p-3 grid grid-cols-3"> 
             <div className="">
             </div>
             <div className="flex-col flex items-center w-[100%] ">
