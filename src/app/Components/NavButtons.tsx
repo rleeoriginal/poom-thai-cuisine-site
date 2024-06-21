@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Menu, MenuButton, MenuItem, MenuItems, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 import { Pacifico } from 'next/font/google';
 
@@ -15,17 +16,17 @@ function classNames(...classes: string[]) {
 
 export default function NavButtons() {
   return <>
-    <div className={`grid grid-cols-2 flex-1 gap-2 ${pacifico.className}`}>
+    <div className={`grid grid-rows-3 flex-1 gap-2 ${pacifico.className}`}>
         <div className="flex justify-center items-center">
+
             <Menu as="div" className="relative inline-block text-left">
                 <div>
-                    <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2  font-semibold text-[#FFE838] shadow-sm hover:bg-gray-50/50">
-                        <a href="">Menu</a>
-                    </MenuButton>
+                    <div className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2  font-semibold text-[#FFE838] shadow-sm hover:bg-gray-50/50">
+                        <a href="menu.pdf">Menu</a>
+                    </div>
                 </div>
             </Menu>
         </div>
-
         <div className="flex justify-center items-center ">
             <Menu as="div" className="relative inline-block text-left">
             <div>
@@ -103,8 +104,26 @@ export default function NavButtons() {
             </Transition>
             </Menu>
         </div>
+        <div className="flex justify-center items-center">
+            <Menu as="div" className="relative inline-block text-left">
+                <div>
+                    <div className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2  font-semibold text-[#FFE838] shadow-sm hover:bg-gray-50/50">
+                        <Link href="/contact">Contact</Link>
+                    </div>
+                </div>
+            </Menu>
+        </div>
     </div>
 
     
   </>
 }
+/*
+            <Menu as="div" className="relative inline-block text-left">
+                <div>
+                    <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md  px-3 py-2  font-semibold text-[#FFE838] shadow-sm hover:bg-gray-50/50">
+                        <a href="menu.pdf">Menu</a>
+                    </MenuButton>
+                </div>
+            </Menu>
+*/

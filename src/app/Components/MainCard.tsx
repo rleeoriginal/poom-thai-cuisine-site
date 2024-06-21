@@ -8,8 +8,8 @@ const pacifico = Pacifico({
 export default function MainCard() {
     return <>
         <div className="flex-1 flex justify-center items-center">
-            <div className={`bg-[#FFF5E1]/60 h-[500px] w-[65vw] rounded-[50px] flex flex-col justify-between items-center text-center p-10 border-8 border-[#007E3A] ${pacifico.className}`}>
-                <div className=" bg-[#007E3A]/75 w-[45vw] border-[#FFE838] rounded-[20px] text-[30px] text-[#FFE838] font-bold p-4">
+            <div className={`bg-[#FFF5E1]/60 h-[500px] w-[65vw] rounded-[50px] flex flex-col justify-between items-center text-center p-10 border-8 border-[#1c6f42] ${pacifico.className}`}>
+                <div className=" bg-[#1c6f42]/75 w-[45vw] border-[#FFE838] rounded-[20px] text-[30px] text-[#FFE838] font-bold p-4">
                     <span className="block">Poom Thai</span> Cuisine
                 </div>
                 <div className="text-[20px] font-bold">

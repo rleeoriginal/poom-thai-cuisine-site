@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Components/Navbar";
+import FooterComponent from "./Components/FooterComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-poom overflow-x-hidden">{children}</body>
+      <body className="font-poom overflow-x-hidden">
+        <Navbar />
+        {children}
+        <FooterComponent />
+      </body>
     </html>
   );
 }

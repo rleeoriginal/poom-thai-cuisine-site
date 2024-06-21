@@ -1,17 +1,13 @@
-import Navbar from "./Components/Navbar";
 import MainBody from "./MainBody";
 import LowerBody from "./Components/LowerBody";
-import FooterComponent from "./Components/FooterComponent";
 
 
 
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <Navbar />
       <MainBody />
       <LowerBody />
-      <FooterComponent />
     </main> 
   )
 }
