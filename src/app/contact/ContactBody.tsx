@@ -1,5 +1,6 @@
 import Image from "next/image";
-import restaurantPic from '../../../public/restaurant.png'
+import restaurantPic from '../../../public/restaurant.png';
+import ContactCard from "./ContactCard";
 
 export default function ContactBody() {
     return <>
@@ -10,6 +11,7 @@ export default function ContactBody() {
             alt="Picture of the restaurant"
             fill={true}
         />
+        <ContactCard />
     </div>
     </>
 
