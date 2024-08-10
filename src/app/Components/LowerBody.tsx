@@ -4,10 +4,10 @@ import CarouselComponent3 from "./CarouselComponent3"
 
 export default function LowerBody() {
     return <>
-        <div className="bg-[#FFF5E1] min-h-[55vh] flex justify-center items-center">
-            <div className="flex flex-row gap-5">
+        <div className="bg-[#FFF5E1] min-h-[50vh] flex justify-center items-center">
+            <div className="flex flex-row gap-5 p-3 pb-6">
                 <CarouselComponent />
-                <div className="hidden lg:block">
+                <div className="hidden md:block">
                     <CarouselComponent2 />
                 </div>
                 <div className="hidden lg:block">
