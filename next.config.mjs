@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    basePath: "/poom-thai-cuisine-site",
-    output: "export"
-};
+const nextConfig = {};
 
 export default nextConfig;
